@@ -14,14 +14,12 @@ class ShoppingCart:
         for i in self.items:
             print(i.name)    
     
-    def addItem(self, Item):
-        self.items.append(Item)
+    def addItem(self, item):
+        self.items.append(item)
     
-    def removeItem(self,Item):
-        self.items.remove(Item)
+    def removeItem(self,item):
+        self.items.remove(item)
       
-
-
     def calculateTotal(self):
         sum = 0
         for i in self.items:
